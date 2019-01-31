@@ -10,6 +10,9 @@
       <a href="/logout">Log Out</a>
       <%= current_user(session).username %>
       <%= current_user(session).balance %>
+    <% else %>
+      <a href="/">Home</a>
+    <% end %>
 
   </body>
 </html>
