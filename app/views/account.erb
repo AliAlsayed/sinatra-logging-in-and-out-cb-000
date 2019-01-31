@@ -9,7 +9,7 @@
     <% if Helpers.is_logged_in?(session) %>
       <a href="/logout">Log Out</a>
       <p><%= Helpers.current_user(session).username %><p>
-      <%= Helpers.current_user(session).balance %>
+      <p><%= Helpers.current_user(session).balance %><p>
     <% else %>
       <a href="/">Home</a>
     <% end %>
